@@ -1,0 +1,22 @@
+a[href="https://www.link-group.eu/"] {
+    color: red;
+}
+
+a[href*="google"] {
+    color: green;
+}
+
+#first-div::after {
+    content: "-NEW";
+    color: yellow;
+    font-style: italic;
+
+}
+
+#second-div:nth-child(6) {
+    color: red;
+}
+
+p:nth-child(8):hover {
+    font-style: italic;
+}
