@@ -12,6 +12,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 16px
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:760px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:414px) {
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
