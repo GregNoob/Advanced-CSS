@@ -1,24 +1,17 @@
-a[href="https://www.link-group.eu/"] {
-    color: red;
+img {
+    width: 300px;
+    height: 150px;
+    padding: auto;
+    background-color: #76a8e6;
 }
 
-a[href*="google"] {
-    color: green;
-}
-
-#first-div>p::after {
-    content: "-NEW";
-    color: yellow;
-}
-
-#second-div p:nth-child(2n+1) {
-    color: blue;
-}
-
-#second-div p:nth-child(2n+2) {
-    color: red;
-}
-
-p:nth-child(8):hover {
-    font-style: italic;
+.wrapper {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+    grid-gap: 16px
 }
